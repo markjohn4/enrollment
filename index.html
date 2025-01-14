@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pre-enrollment Form</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="img/SNACF Logo.jpg"/>
+
+</head>
+<body>
+
+  <div class="container">
+
+    <h4> Republic of the Philippines <br>
+      SENATOR NINOY AQUINO COLLEGE FOUNDATION<br>
+      Cataluña St., Kulaman, Senator Ninoy Aquino, Sultan Kudarat <br><br>
+       <img src="img/SNACF Logo.jpg" alt="enrollment"/> <br><br>
+      College Department Registration Form
+     </h4>
+
+    <form id="enrollmentForm">
+      <!-- Student's Information -->
+      <fieldset>
+        <legend>Student's Information</legend>
+        <label for="studentId">Student ID Number:</label>
+        <input type="number" id="studentId" name="studentId">
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName">
+
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName">
+
+        <label for="middleName">Middle Name:</label>
+        <input type="text" id="middleName" name="middleName">
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address">
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+
+        <label for="civilStatus">Civil Status:</label>
+        <select id="civilStatus" name="civilStatus">
+          <option value="single">Single</option>
+          <option value="married">Married</option>
+        </select>
+
+        <label for="birthday">Birthday:</label>
+        <input type="text" id="birthday" name="birthday">
+
+        <label for="age">Age:</label>
+        <input type="text" id="age" name="age">
+      </fieldset>
+
+      <!-- Parents/Guardian's Information -->
+      <fieldset>
+        <legend>Parents/Guardian's Information</legend>
+        <label for="fatherName">Father's Name:</label>
+        <input type="text" id="fatherName" name="fatherName">
+
+        <label for="motherName">Mother's Maiden Name:</label>
+        <input type="text" id="motherName" name="motherName">
+
+        <label for="contact">Contact No:</label>
+        <input type="text" id="contact" name="contact">
+      </fieldset>
+
+      <!-- Course and Year Level -->
+      <fieldset>
+        <legend>Course and Year Level</legend>
+        <label for="course">Course:</label>
+        <select id="course" name="course">
+          <option value="ICT">BTLED-ICT</option>
+          <option value="HE">BTLED-HE</option>
+          <option value="IA">BTLED-IA</option>
+          <option value="BSED">BSED-MATH</option>
+          <option value="BEED">BEED</option>
+        </select>
+
+        <label for="yearLevel">Year Level:</label>
+        <select id="yearLevel" name="yearLevel">
+          <option value="1st Year">1st Year</option>
+          <option value="2nd Year">2nd Year</option>
+          <option value="3rd Year">3rd Year</option>
+          <option value="4th Year">4th Year</option>
+        </select>
+      </fieldset>
+
+      <!-- Subjects List -->
+      <div id="subjectsContainer"></div>
+
+      <br> <p> <b>MA. FE P. SINADJAN</b> <br>  School Registrar</p> 
+      
+      <br> <P> <b> EVELYN P. CORPUZ</b>  <br> School Cashier</P>
+<hr>
+
+      <!-- Print Button -->
+      <button type="button" id="printButton">Print</button>
+      <button type="button" id="downloadButton">Download as PDF</button>
+
+    </form>
+
+    <!-- Section for Displaying Form Data -->
+    <div id="resultContainer"></div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+
+</body>
+</html>
