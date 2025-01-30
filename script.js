@@ -250,9 +250,11 @@ function printData() {
   
     <h4> Republic of the Philippines <br>
     SENATOR NINOY AQUINO COLLEGE FOUNDATION<br>
-    Cataluña St., Kulaman, Senator Ninoy Aquino, Sultan Kudarat
-         College Department Registration Form
+    Cataluña St., Kulaman, Senator Ninoy Aquino, Sultan Kudarat <br>
+         College Department <br>
+         Registration Form
    </h4>
+<hr>
       <ul>
         <li><strong>Student ID Number:</strong> ${studentId}</li>
         <li><strong>Full Name:</strong> ${firstName} ${middleName} ${lastName}</li>
