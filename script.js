@@ -247,11 +247,11 @@ function printData() {
   
     // Prepare HTML to display
     const formData = `
+   <img src="img/SNACF Logo.jpg" alt="enrollment"/> <br><br>
     <h4> Republic of the Philippines <br>
     SENATOR NINOY AQUINO COLLEGE FOUNDATION<br>
     Cataluña St., Kulaman, Senator Ninoy Aquino, Sultan Kudarat <br><br>
-     <img src="img/SNACF Logo.jpg" alt="enrollment"/> <br><br>
-    College Department Registration Form
+         College Department Registration Form
    </h4>
       <ul>
         <li><strong>Student ID Number:</strong> ${studentId}</li>
